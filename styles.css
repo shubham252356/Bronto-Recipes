@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Roboto:wght@400;700&family=Rubik&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFF5E0;
+}
+
+.navbar-container h1{
+    font-family: 'Indie Flower',cursive;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Indie Flower',cursive;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.navbar-right a:hover {
+    color: #D64770;
+}
+
+.main-container {
+    background-image: url(images/pesce-huang-LxrjyU8oR10-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: auto;
+}
+
+.main-container h2 {
+    padding-top: 300px;
+    padding-left: 50px;
+    font-family: 'Indie Flower',cursive;
+    color: #D64770;
+    font-size: 100px;
+}
+
+.main-container p {
+    padding-left: 70px;
+    padding-bottom: 30px;
+    font-family: 'Indie Flower',cursive;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 40px;
+}
+
+.main-container a {
+    margin-left: 70px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #D64770;
+    font-family: 'Indie Flower',cursive;
+    font-size: 25px;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.main-container a:hover {
+    color: #333;
+    background-color: #D64770;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #141E46;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-family: 'Indie Flower',cursive;    
+}
+
+.footer-right a:hover {
+    color: #D64770;
+}
