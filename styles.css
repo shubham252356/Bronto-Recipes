@@ -5,93 +5,128 @@
     padding: 0;
 }
 
-.navbar-container {
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    font-family: 'Indie Flower',cursive;
+    background-image: url(images/food2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: #FFF5E0;
 }
 
-.navbar-container h1{
-    font-family: 'Indie Flower',cursive;
-}
-
-.navbar-right a {
+.header-right a {
     text-decoration: none;
     color: #333;
-    font-family: 'Indie Flower',cursive;
-    font-size: 1.6em;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
-.navbar-right a:hover {
+.header-right a:hover{
     color: #D64770;
+    text-decoration: underline;
 }
 
-.main-container {
-    background-image: url(images/pesce-huang-LxrjyU8oR10-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    width: auto;
+.header-left h1 {
+    cursor: pointer;
 }
 
-.main-container h2 {
-    padding-top: 300px;
-    padding-left: 50px;
-    font-family: 'Indie Flower',cursive;
+.header-left,.header-right{
+    display: flex;
+    gap: 1.2em;
+}
+
+.header-left img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.header-right img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.main h2 {
+    font-size: 5rem;
     color: #D64770;
-    font-size: 100px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    animation: intro 3s forwards;
+    opacity: 0;
 }
 
-.main-container p {
-    padding-left: 70px;
-    padding-bottom: 30px;
-    font-family: 'Indie Flower',cursive;
-    color: white;
-    font-size: 30px;
-    font-weight: 500;
-    padding-top: 40px;
+.main p {
+    color: #FFF5E0;
+    font-size: 1.5rem;
+    animation: intro 8s forwards;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    opacity: 0;
 }
 
-.main-container a {
-    margin-left: 70px;
-    margin-top: 30px;
+.main a {
     text-decoration: none;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    color: #FFF5E0;
+    font-size: 2rem;
+    position: relative;
+    animation: intro 8s forwards;
+    opacity: 0;
+}
+
+.main a:hover {
+    animation:  ease-in 0.5s normal delay iteration-count direction fill-mode;
+    text-decoration: underline;
     color: #D64770;
-    font-family: 'Indie Flower',cursive;
-    font-size: 25px;
-    border: 1px solid;
-    padding: 20px;
-    border-radius: 50px;
-}
-
-.main-container a:hover {
-    color: #333;
-    background-color: #D64770;
 }
 
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #141E46;
-    color: white;
-    text-align: center;
+@keyframes intro {
+    100% {bottom: 0};
+    from {opacity: 0} to {opacity: 1};
+}
+
+
+.footer {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    color: #FFF5E0;
+    padding-bottom: 5px;
+}
+
+.footer-left a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #FFF5E0;
+    font-size: 1.1rem;
+}
+
+.footer-right {
+    display: flex;
+    gap: 1.3em;
+    padding-right: 15px;
 }
 
 .footer-right a {
     text-decoration: none;
-    color: white;
-    padding: 15px;
-    font-family: 'Indie Flower',cursive;    
+    color: #FFF5E0;
 }
 
-.footer-right a:hover {
+.footer a:hover {
     color: #D64770;
 }
